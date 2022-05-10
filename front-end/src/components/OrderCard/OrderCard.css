@@ -1,0 +1,75 @@
+.order-card-container {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 1px 2px 1px rgb(190, 190, 190);
+  display: flex;
+  flex-direction: row;
+  font-family: Arial , Helvetica , sans-serif;
+  height: 4.5em;
+  margin: 0.8em 0.5em;
+  width: 22em;
+}
+
+.order-id-container {
+  align-items: center;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}
+
+.order-id-title {
+  font-size: 0.7em;
+}
+
+.order-id-text {
+  font-size: 1em;
+}
+
+.order-info-address-container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.order-status {
+  align-items: center;
+  background-color: rgb(217, 202, 64);
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  font-weight: 700;
+  height: 90%;
+  justify-content: center;
+  margin: auto;
+  width: 52%;
+}
+
+.order-date-price {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 44%;
+}
+
+.date-price {
+  align-items: center;
+  background-color: rgb(240, 250, 250);
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  font-weight: 700;
+  height: 40%;
+  justify-content: center;
+  margin: 0.2em 0;
+}

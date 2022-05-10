@@ -1,0 +1,247 @@
+
+> sd-0x-project-delivery-app@1.0.0 test:dev
+> NODE_ENV=development npm run jest -- --runInBand --detectOpenHandles --forceExit --verbose "05"
+
+
+> sd-0x-project-delivery-app@1.0.0 jest
+> ./node_modules/.bin/jest "--runInBand" "--detectOpenHandles" "--forceExit" "--verbose" "05"
+
+  console.log
+    
+    Rodando novo arquivo de teste com as configurações:
+     {
+      file: '05customer_orders.test.js',
+      startedAt: '07/02/2022 13:26:53',
+      environment: 'development',
+      database: {
+        restore: true,
+        host: 'localhost',
+        port: '3306',
+        user: 'Arvo',
+        password: 'Naocliquenove@9',
+        defaultSuffix: '-dev',
+        defaultDB: 'delivery-app-dev'
+      },
+      puppeteer: {
+        timeout: 10000,
+        snapshots: './__tests__/reports/report-1644251206'
+      },
+      frontEndHost: 'http://localhost:3000'
+    }
+
+      at Object.<anonymous> (../config/setupTest.js:23:13)
+
+  console.log
+    Testando o requisito:
+    `22 - Crie uma tela de pedidos do cliente com elementos a partir dos data-testids disponíveis no protótipo > O avaliador ira testar se existem data-testids para até os dez primeiros itens contidos na tabela 'sales'`
+
+      at Object.<anonymous> (../config/setupTest.js:60:11)
+
+  console.log
+    Amostragem de itens utilizada no teste:
+    `22 - Crie uma tela de pedidos do cliente com elementos a partir dos data-testids disponíveis no protótipo > O avaliador ira testar se existem data-testids para até os dez primeiros itens contidos na tabela 'sales'`
+    Preço total: 60,95
+
+      at showCurrentCart (actions/customer/showCurrentCart.js:2:11)
+
+  console.log
+    ┌─────────┬───────────┬────────────────────────────┬──────────┬───────────┬──────────┐
+    │ (index) │ productId │            name            │ quantity │ unitPrice │ subTotal │
+    ├─────────┼───────────┼────────────────────────────┼──────────┼───────────┼──────────┤
+    │    0    │     3     │ 'Antarctica Pilsen 300ml'  │    4     │  '2,49'   │  '9,96'  │
+    │    1    │     5     │        'Skol 269ml'        │    1     │  '2,19'   │  '2,19'  │
+    │    2    │     6     │ 'Skol Beats Senses 313ml'  │    2     │  '4,49'   │  '8,98'  │
+    │    3    │     7     │       'Becks 330ml'        │    4     │  '4,99'   │ '19,96'  │
+    │    4    │     8     │ 'Brahma Duplo Malte 350ml' │    2     │  '2,79'   │  '5,58'  │
+    │    5    │    10     │ 'Skol Beats Senses 269ml'  │    4     │  '3,57'   │ '14,28'  │
+    └─────────┴───────────┴────────────────────────────┴──────────┴───────────┴──────────┘
+
+      at showCurrentCart (actions/customer/showCurrentCart.js:8:11)
+
+  console.log
+    Dados do pedido utilizada no teste:
+    `22 - Crie uma tela de pedidos do cliente com elementos a partir dos data-testids disponíveis no protótipo > O avaliador ira testar se existem data-testids para até os dez primeiros itens contidos na tabela 'sales'`
+
+      at showCurrentOrderInfo (actions/customer/showCurrentOrderInfo.js:2:11)
+
+  console.log
+    ┌─────────────────┬────────────────────────────┐
+    │     (index)     │           Values           │
+    ├─────────────────┼────────────────────────────┤
+    │     saleId      │             5              │
+    │     userId      │             3              │
+    │    sellerId     │             2              │
+    │   totalPrice    │          '60,95'           │
+    │ deliveryAddress │      'Santos Avenida'      │
+    │ deliveryNumber  │           '942'            │
+    │    saleDate     │ '2022-02-07T16:27:35.826Z' │
+    └─────────────────┴────────────────────────────┘
+
+      at showCurrentOrderInfo (actions/customer/showCurrentOrderInfo.js:5:11)
+
+  console.log
+    Testando o requisito:
+    `23 - Desenvolva a tela de pedidos do cliente de forma a conter a lista de pedidos do mesmo com os dados corretos > O avaliador ira testar se os dados associados aos data-testids dos dez primeiros itens batem com os do banco de dados`
+
+      at Object.<anonymous> (../config/setupTest.js:60:11)
+
+  console.log
+    Amostragem de itens utilizada no teste:
+    `23 - Desenvolva a tela de pedidos do cliente de forma a conter a lista de pedidos do mesmo com os dados corretos > O avaliador ira testar se os dados associados aos data-testids dos dez primeiros itens batem com os do banco de dados`
+    Preço total: 82,40
+
+      at showCurrentCart (actions/customer/showCurrentCart.js:2:11)
+
+  console.log
+    ┌─────────┬───────────┬───────────────────────────┬──────────┬───────────┬──────────┐
+    │ (index) │ productId │           name            │ quantity │ unitPrice │ subTotal │
+    ├─────────┼───────────┼───────────────────────────┼──────────┼───────────┼──────────┤
+    │    0    │     2     │     'Heineken 600ml'      │    3     │  '7,50'   │ '22,50'  │
+    │    1    │     7     │       'Becks 330ml'       │    1     │  '4,99'   │  '4,99'  │
+    │    2    │     9     │       'Becks 600ml'       │    3     │  '8,89'   │ '26,67'  │
+    │    3    │    10     │ 'Skol Beats Senses 269ml' │    4     │  '3,57'   │ '14,28'  │
+    │    4    │    11     │   'Stella Artois 275ml'   │    4     │  '3,49'   │ '13,96'  │
+    └─────────┴───────────┴───────────────────────────┴──────────┴───────────┴──────────┘
+
+      at showCurrentCart (actions/customer/showCurrentCart.js:8:11)
+
+  console.log
+    Dados do pedido utilizada no teste:
+    `23 - Desenvolva a tela de pedidos do cliente de forma a conter a lista de pedidos do mesmo com os dados corretos > O avaliador ira testar se os dados associados aos data-testids dos dez primeiros itens batem com os do banco de dados`
+
+      at showCurrentOrderInfo (actions/customer/showCurrentOrderInfo.js:2:11)
+
+  console.log
+    ┌─────────────────┬────────────────────────────┐
+    │     (index)     │           Values           │
+    ├─────────────────┼────────────────────────────┤
+    │     saleId      │             5              │
+    │     userId      │             3              │
+    │    sellerId     │             2              │
+    │   totalPrice    │          '82,40'           │
+    │ deliveryAddress │      'Melo Marginal'       │
+    │ deliveryNumber  │           '123'            │
+    │    saleDate     │ '2022-02-07T16:28:25.868Z' │
+    └─────────────────┴────────────────────────────┘
+
+      at showCurrentOrderInfo (actions/customer/showCurrentOrderInfo.js:5:11)
+
+  console.log
+    Testando o requisito:
+    `24 - Desenvolva a tela de pedidos do cliente de forma a dar acesso à tela de detalhes de um pedido ao clicar no card do mesmo > O avaliador acessará a tela de detalhes do último pedido pela tela de pedidos, após o checkout do mesmo`
+
+      at Object.<anonymous> (../config/setupTest.js:60:11)
+
+  console.log
+    Amostragem de itens utilizada no teste:
+    `24 - Desenvolva a tela de pedidos do cliente de forma a dar acesso à tela de detalhes de um pedido ao clicar no card do mesmo > O avaliador acessará a tela de detalhes do último pedido pela tela de pedidos, após o checkout do mesmo`
+    Preço total: 88,24
+
+      at showCurrentCart (actions/customer/showCurrentCart.js:2:11)
+
+  console.log
+    ┌─────────┬───────────┬────────────────────────────┬──────────┬───────────┬──────────┐
+    │ (index) │ productId │            name            │ quantity │ unitPrice │ subTotal │
+    ├─────────┼───────────┼────────────────────────────┼──────────┼───────────┼──────────┤
+    │    0    │     2     │      'Heineken 600ml'      │    1     │  '7,50'   │  '7,50'  │
+    │    1    │     3     │ 'Antarctica Pilsen 300ml'  │    3     │  '2,49'   │  '7,47'  │
+    │    2    │     4     │       'Brahma 600ml'       │    4     │  '7,50'   │ '30,00'  │
+    │    3    │     5     │        'Skol 269ml'        │    5     │  '2,19'   │ '10,95'  │
+    │    4    │     6     │ 'Skol Beats Senses 313ml'  │    2     │  '4,49'   │  '8,98'  │
+    │    5    │     7     │       'Becks 330ml'        │    3     │  '4,99'   │ '14,97'  │
+    │    6    │     8     │ 'Brahma Duplo Malte 350ml' │    3     │  '2,79'   │  '8,37'  │
+    └─────────┴───────────┴────────────────────────────┴──────────┴───────────┴──────────┘
+
+      at showCurrentCart (actions/customer/showCurrentCart.js:8:11)
+
+  console.log
+    Dados do pedido utilizada no teste:
+    `24 - Desenvolva a tela de pedidos do cliente de forma a dar acesso à tela de detalhes de um pedido ao clicar no card do mesmo > O avaliador acessará a tela de detalhes do último pedido pela tela de pedidos, após o checkout do mesmo`
+
+      at showCurrentOrderInfo (actions/customer/showCurrentOrderInfo.js:2:11)
+
+  console.log
+    ┌─────────────────┬────────────────────────────┐
+    │     (index)     │           Values           │
+    ├─────────────────┼────────────────────────────┤
+    │     saleId      │             5              │
+    │     userId      │             3              │
+    │    sellerId     │             2              │
+    │   totalPrice    │          '88,24'           │
+    │ deliveryAddress │     'Matheus Travessa'     │
+    │ deliveryNumber  │           '622'            │
+    │    saleDate     │ '2022-02-07T16:29:10.020Z' │
+    └─────────────────┴────────────────────────────┘
+
+      at showCurrentOrderInfo (actions/customer/showCurrentOrderInfo.js:5:11)
+
+FAIL __tests__/end-to-end/05customer_orders.test.js (144.081 s)
+  22 - Crie uma tela de pedidos do cliente com elementos a partir dos data-testids disponíveis no protótipo
+    ✕ O avaliador ira testar se existem data-testids para até os dez primeiros itens contidos na tabela 'sales' (56375 ms)
+  23 - Desenvolva a tela de pedidos do cliente de forma a conter a lista de pedidos do mesmo com os dados corretos
+    ✕ O avaliador ira testar se os dados associados aos data-testids dos dez primeiros itens batem com os do banco de dados (40033 ms)
+  24 - Desenvolva a tela de pedidos do cliente de forma a dar acesso à tela de detalhes de um pedido ao clicar no card do mesmo
+    ✕ O avaliador acessará a tela de detalhes do último pedido pela tela de pedidos, após o checkout do mesmo (45013 ms)
+
+  ● 22 - Crie uma tela de pedidos do cliente com elementos a partir dos data-testids disponíveis no protótipo › O avaliador ira testar se existem data-testids para até os dez primeiros itens contidos na tabela 'sales'
+
+    snapShotId: 1644251213960
+
+    Não foi possível encontrar o elemento de referência '[data-testid^='customer_orders__element-order-id-'][data-testid$='-1']':
+    "waiting for selector `[data-testid^='customer_orders__element-order-id-'][data-testid$='-1']` failed: timeout 10000ms exceeded"
+
+      52 |   test("O avaliador ira testar se existem data-testids para até os dez primeiros itens contidos na tabela 'sales'", async () => {
+      53 |     for (const { id } of orderList) {
+    > 54 |       await expect(page).toFindElement(
+         |                          ^
+      55 |         customerOrdersPage.element.card.orderId + `[data-testid$='-${id}']`
+      56 |       );
+      57 |       await expect(page).toFindElement(
+
+      at Object.<anonymous> (05customer_orders.test.js:54:26)
+
+  ● 23 - Desenvolva a tela de pedidos do cliente de forma a conter a lista de pedidos do mesmo com os dados corretos › O avaliador ira testar se os dados associados aos data-testids dos dez primeiros itens batem com os do banco de dados
+
+    snapShotId: 1644251270336
+
+    Não foi possível trazer o texto interno do elemento de referência '[data-testid^='customer_orders__element-order-id-'][data-testid$='-1']':
+    "Error: failed to find element matching selector "[data-testid^='customer_orders__element-order-id-'][data-testid$='-1']""
+
+      72 |   test("O avaliador ira testar se os dados associados aos data-testids dos dez primeiros itens batem com os do banco de dados", async () => {
+      73 |     for (const { id, status, sale_date: saleDate, total_price: totalPrice } of orderList) {
+    > 74 |       await expect(page).toGetTextFromElement(
+         |                          ^
+      75 |         customerOrdersPage.element.card.orderId + `[data-testid$='-${id}']`,
+      76 |         id
+      77 |       );
+
+      at Object.<anonymous> (05customer_orders.test.js:74:26)
+          at runMicrotasks (<anonymous>)
+
+  ● 24 - Desenvolva a tela de pedidos do cliente de forma a dar acesso à tela de detalhes de um pedido ao clicar no card do mesmo › O avaliador acessará a tela de detalhes do último pedido pela tela de pedidos, após o checkout do mesmo
+
+    snapShotId: 1644251310369
+
+    Não foi possível clicar no elemento de referência '[data-testid^='customer_orders__element-order-id-'][data-testid$='-5']'
+
+       97 |     const { saleId } = order;
+       98 |
+    >  99 |     await expect(page).toClickOnElement({
+          |                        ^
+      100 |       selector:
+      101 |         customerOrdersPage.element.card.orderId + `[data-testid$='-${saleId}']`,
+      102 |     });
+
+      at Object.<anonymous> (05customer_orders.test.js:99:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        144.241 s
+Ran all test suites matching /05/i.
+  console.log
+    
+    Arquivo "05customer_orders.test.js" encerrado em: 07/02/2022 13:29:15
+
+      at Object.<anonymous> (../config/setupTest.js:44:13)
+
